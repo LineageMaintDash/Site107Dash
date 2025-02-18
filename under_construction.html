@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            background: #2c2a26;
+            color: #c49a6c;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .gear {
+            width: 80px;
+            height: 80px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Gear_icon.svg') no-repeat;
+            background-size: cover;
+            position: absolute;
+            animation: spin 4s linear infinite;
+        }
+        .gear:nth-child(2) {
+            left: 100px;
+            animation-duration: 6s;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .message {
+            font-size: 24px;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ Under Construction ⚙️</h1>
+        <div class="gear" style="top: 50px;"></div>
+        <div class="gear" style="top: 50px;"></div>
+        <p class="message">Our steampunk workshop is busy crafting something amazing. Stay tuned! 🕰️</p>
+    </div>
+</body>
+</html>
